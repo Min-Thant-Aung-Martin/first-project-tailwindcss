@@ -6,6 +6,7 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="./output.css">
     <link rel="icon" href="../img/Icon.svg" type="image/icon type">
+    <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.min.css">
 </head>
 <body>
     <!-- Nav Bar -->
@@ -37,7 +38,94 @@
     </div>
     <!-- Nav Bar section end! -->
 
-    <!-- Hero section -->
-     
+    <!-- Slider main container -->
+    <div class="swiper container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+        <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="flex items-center justify-center">
+                    <div class="basis-6/12 h-3/5 grid grid-cols-1 gap-y-10 ">
+                        <h1 class="text-5xl font-semibold">Lessons and insight <span class="text-green-600 block"> from 8 years</span></h1>
+                        <p class="text-gray-600">Where to grow your business as a photographer: site or social media?</p>
+                        <button class="bg-green-600 text-white rounded-md px-5 py-2 w-32">Sign Up</button>
+                    </div>
+                    <div class="basis-3/12 ">
+                        <img src="../img/slide 1.svg" alt="" class="justify-center">
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="flex flex-row-reverse items-center justify-center">
+                    <div class="basis-6/12">
+                        <div class="grid justify-end">
+                            <div class="h-3/5  grid gap-y-10">
+                                <h1 class="text-5xl font-semibold">Lessons and insight <span class="text-green-600 block"> from 8 years</span></h1>
+                                <p class="text-gray-600">Where to grow your business as a photographer: site or social media?</p>
+                                <button class="bg-green-600 text-white rounded-md px-5 py-2 w-32">Sign Up</button>
+                        </div>
+                        </div>    
+                    </div>
+                    <div class="basis-3/12 ">
+                        <img src="../img/slide 2.svg" alt="" class="justify-center">
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="flex items-center  justify-center">
+                    <div class="basis-6/12 h-3/5 grid grid-cols-1 gap-y-10 ">
+                        <h1 class="text-5xl font-semibold">Lessons and insight <span class="text-green-600 block"> from 8 years</span></h1>
+                        <p class="text-gray-600">Where to grow your business as a photographer: site or social media?</p>
+                        <button class="bg-green-600 text-white rounded-md px-5 py-2 w-32">Sign Up</button>
+                    </div>
+                    <div class="basis-3/12 ">
+                        <img src="../img/mobile-login/pana.svg" alt="" class="justify-center">
+                    </div>
+                </div>
+            </div>
+           
+        ...
+        </div>
+        <!-- If we need pagination-->
+        <div class="swiper-pagination"></div>
+    
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+    
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+
+    <script src="../node_modules/swiper/swiper-bundle.min.js"></script>
+    <script>
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+            speed:400,
+            SpaceBetween: 100,
+            autoplay: {
+                delay: 3000,
+            },
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+
+    </script>
 </body>
 </html>
