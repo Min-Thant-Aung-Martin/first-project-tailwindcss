@@ -8,7 +8,7 @@
     <link rel="icon" href="../img/Icon.svg" type="image/icon type">
     <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.min.css">
 </head>
-<body>
+<body class="bg-gray-100">
     <!-- Nav Bar -->
     <div class="container mx-auto h-20 content-center">
         <nav class="flex flex-row">
@@ -31,73 +31,173 @@
             <div class="basis-1/4">
                 <div class="flex flex-row justify-evenly">
                     <button class="text-green-600">Login</button>
-                    <button class="bg-green-600 text-white rounded-md px-5 py-2">Sign Up</button>
+                    <button class="primary-btn">Sign Up</button>
                 </div>
             </div>
          </nav>
     </div>
     <!-- Nav Bar section end! -->
 
+    <!-- Hero section Start -->
     <!-- Slider main container -->
-    <div class="swiper container">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-        <!-- Slides -->
-            <div class="swiper-slide">
-                <div class="flex items-center justify-center">
-                    <div class="basis-6/12 h-3/5 grid grid-cols-1 gap-y-10 ">
-                        <h1 class="text-5xl font-semibold">Lessons and insight <span class="text-green-600 block"> from 8 years</span></h1>
-                        <p class="text-gray-600">Where to grow your business as a photographer: site or social media?</p>
-                        <button class="bg-green-600 text-white rounded-md px-5 py-2 w-32">Sign Up</button>
-                    </div>
-                    <div class="basis-3/12 ">
-                        <img src="../img/slide 1.svg" alt="" class="justify-center">
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="flex flex-row-reverse items-center justify-center">
-                    <div class="basis-6/12">
-                        <div class="grid justify-end">
-                            <div class="h-3/5  grid gap-y-10">
-                                <h1 class="text-5xl font-semibold">Lessons and insight <span class="text-green-600 block"> from 8 years</span></h1>
-                                <p class="text-gray-600">Where to grow your business as a photographer: site or social media?</p>
-                                <button class="bg-green-600 text-white rounded-md px-5 py-2 w-32">Sign Up</button>
+    <div class="container mx-auto">
+       <div class=" h-[55vh] content-center">
+        <div class="swiper ">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="flex items-center justify-center">
+                        <div class="basis-6/12 h-3/5 grid grid-cols-1 gap-y-10 ">
+                            <h1 class="text-5xl font-semibold">Lessons and insight <span class="text-green-600 block"> from 8 years</span></h1>
+                            <p class="text-gray-600">Where to grow your business as a photographer: site or social media?</p>
+                            <button class="primary-btn w-32">Register</button>
                         </div>
-                        </div>    
-                    </div>
-                    <div class="basis-3/12 ">
-                        <img src="../img/slide 2.svg" alt="" class="justify-center">
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="flex items-center  justify-center">
-                    <div class="basis-6/12 h-3/5 grid grid-cols-1 gap-y-10 ">
-                        <h1 class="text-5xl font-semibold">Lessons and insight <span class="text-green-600 block"> from 8 years</span></h1>
-                        <p class="text-gray-600">Where to grow your business as a photographer: site or social media?</p>
-                        <button class="bg-green-600 text-white rounded-md px-5 py-2 w-32">Sign Up</button>
-                    </div>
-                    <div class="basis-3/12 ">
-                        <img src="../img/mobile-login/pana.svg" alt="" class="justify-center">
+                        <div class="basis-3/12 ">
+                            <img src="../img/slide 1.svg" alt="" class="justify-center">
+                        </div>
                     </div>
                 </div>
+    
+                <div class="swiper-slide">
+                    <div class="flex flex-row-reverse items-center justify-center">
+                        <div class="basis-6/12">
+                            <div class="grid justify-end">
+                                <div class="h-3/5  grid gap-y-10">
+                                    <h1 class="text-5xl font-semibold">Lessons and insight <span class="text-green-600 block"> from 8 years</span></h1>
+                                    <p class="text-gray-600">Where to grow your business as a photographer: site or social media?</p>
+                                    <button class="primary-btn w-32">Register</button>
+                            </div>
+                            </div>    
+                        </div>
+                        <div class="basis-3/12 ">
+                            <img src="../img/slide 2.svg" alt="" class="justify-center">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide">
+                    <div class="flex items-center  justify-center">
+                        <div class="basis-6/12 h-3/5 grid grid-cols-1 gap-y-10 ">
+                            <h1 class="text-5xl font-semibold">Lessons and insight <span class="text-green-600 block"> from 8 years</span></h1>
+                            <p class="text-gray-600">Where to grow your business as a photographer: site or social media?</p>
+                            <button class="primary-btn w-32">Enroll Now</button>
+                        </div>
+                        <div class="basis-3/12 ">
+                            <img src="../img/mobile-login/pana.svg" alt="" class="justify-center">
+                        </div>
+                    </div>
+                </div>
+               
+                ...
             </div>
-           
-        ...
+            <!-- If we need pagination-->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+        
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
         </div>
-        <!-- If we need pagination-->
-        <div class="swiper-pagination"></div>
-    
-        <!-- If we need navigation buttons -->
-        <!-- <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div> -->
-    
-        <!-- If we need scrollbar -->
-        <!-- <div class="swiper-scrollbar"></div> -->
+       </div>
     </div>
+    <!-- heros section end -->
+
+    <!-- Our Clients section start -->
+     <div class="w-full bg-white">
+        <div class="container mx-auto">
+            <div class="h-[30vh] grid grid-cols-1 content-around">
+                <div class="">
+                    <h2 class="text-3xl text-center">Our Clients</h2>
+                    <p class="text-center text-gray-400">We have been working with some Fortune 500+ clients</p>
+               </div>
+                <div class="flex justify-around">
+                    <img src="../img/our_client /Logo.svg" alt="" class="">
+                    <img src="../img/our_client /Logo-1.svg" alt="" class="">
+                    <img src="../img/our_client /Logo-2.svg" alt="" class="">
+                    <img src="../img/our_client /Logo-3.svg" alt="" class="">
+                    <img src="../img/our_client /Logo-4.svg" alt="" class="">
+                    <img src="../img/our_client /Logo-5.svg" alt="" class="">
+                    <img src="../img/our_client /Logo-6.svg" alt="" class="">
+                </div>
+            </div>
+        </div>
+     </div>
+    <!-- Our Clients section end -->
+
+    <!-- Manage community section start -->
+    <div class="w-full bg-white">
+        <div class="container mx-auto">
+            <div class="h-[55vh] grid grid-cols-1 content-around">
+                <div class="">
+                    <h2 class="text-3xl text-center">Manage your entire community <br> in a single system</h2>
+                    <p class="text-center text-gray-400">Who is Nextcent suitable for?
+                    </p>
+               </div>
+                <div class="columns-3 gap-36">
+                   <div class="columns-1 text-center border border-gray-200 py-[3rem] rounded-lg">
+                        <img src="../img/manage-community /Icon.svg" alt="" class="inline-block">
+                        <h3 class="text-2xl">
+                            Membership <br> Organisations
+                        </h3>
+                        <p class="text-gray-400">
+                            Our membership management <br> software provides full automation of membership <br> renewals and payments
+                        </p>
+                   </div>
+
+                   <div class="columns-1 text-center border border-gray-200 py-[3rem] rounded-lg">
+                        <img src="../img/manage-community /Icon-1.svg" alt="" class="inline-block">
+                        <h3 class="text-2xl">
+                            National <br> Associations
+                        </h3>
+                        <p class="text-gray-400">
+                            Our membership management  <br> software provides full automation of <br> membership renewals and payments
+                        </p>
+                    </div>
+
+                    <div class="columns-1 text-center border border-gray-200 py-[3rem] rounded-lg">
+                        <img src="../img/manage-community /Icon-2.svg" alt="" class="inline-block">
+                        <h3 class="text-2xl">
+                            Clubs And  <br> Groups
+                        </h3>
+                        <p class="text-gray-400">
+                            Our membership management  <br> software provides full automation of <br> membership renewals and payments
+                        </p>
+                    </div>
+
+
+               
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Manage community section end -->
+
+    <!-- Pixelgrade section start -->
+     <div class="w-full bg-white">
+        <div class="container mx-auto">
+            <div class="flex h-[45vh] items-center">
+                <div class="basis-2/5 flex justify-center">
+                    <img src="../img/mobile-login/rafiki.svg" alt="" class="">
+                </div>
+                <div class="basis-3/5">
+                    <div class="w-1/2">
+                        <h2 class="text-3xl">The unseen of spending three years at Pixelgrade</h2>
+                        <p class=" text-gray-400 pt-2 pb-8">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.
+                        </p>
+                        <button class="primary-btn">Learn More</button>
+
+                   </div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+
+
 
     <script src="../node_modules/swiper/swiper-bundle.min.js"></script>
     <script>
